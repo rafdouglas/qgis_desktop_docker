@@ -1,0 +1,25 @@
+[general]
+name=Street View
+qgisMinimumVersion=3.0
+qgisMaximumVersion=3.99
+description=Street View
+version=3.1
+author=Saccon Fabio
+email=saccon@gisplan.it
+
+changelog = Version for QGIS3 and change icon 
+
+about =Streetview allows you to open a web page with the Google Street View that highlights the part you have identified with two points (the base and target points) The target point is identified by dragging the base point
+
+tags=StreetView,Google
+
+homepage=http://www.gisplan.it/
+tracker=http://rubyforge.org/projects/gisplan/
+repository=http://hub.qgis.org/projects/gisplan/
+icon=icon.png
+
+experimental=False
+
+
+deprecated=False
+

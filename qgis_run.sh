@@ -1,9 +1,11 @@
 #xhost +
 my_homedir=${HOME}
-my_qgis_dir="$my_homedir/.qgis34_docker"
+my_qgis_dir="$my_homedir/.qgis34-docker"
 
 echo "my_homedir:$my_homedir"
 mkdir -p "$my_qgis_dir"
+
+cp -n -r data/qgis34-docker/.local $my_qgis_dir/
 
 docker run -ti --rm \
 	-e DISPLAY=$DISPLAY \
