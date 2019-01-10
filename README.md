@@ -1,2 +1,41 @@
-# qgis_desktop_docker
-QGIS 3.4 Desktop running on Docker
+# QGIS 3.4 Desktop running on Docker
+
+A full-fledge QGIS 3.4 running on Docker.
+
+Everything supported in the standard QGIS 3.4 is ready out of the box: 3D views, Google Maps/Sat/Terrain integration, OSM, plugins etc.
+Preferences are retained across sessions, and the integration with your physical computer is seamless.
+
+**Automated build on Docker Hub for maximum reliability.**
+
+![qgis_desktop_docker screenshot](https://raw.githubusercontent.com/rafdouglas/qgis_desktop_docker/3.4/docs/qgis_desktop_docker_3.4.jpg)
+
+
+## Installation And Usage
+
+This is the easiest and fastest way, since it downloads the image from DockerHub, you don't need to compile anything on your computer.
+
+    git clone https://github.com/rafdouglas/qgis_desktop_docker.git
+    cd qgis_desktop_docker
+    sh qgis_run.sh
+
+### Build your own
+
+If you instead feel like customizing something, you can build the image locally:
+
+    git clone https://github.com/rafdouglas/qgis_desktop_docker.git
+    cd qgis_desktop_docker
+    #(Edit the Dockerfile or what you need)
+    . ./build
+    
+    sh qgis_run.sh 
+
+
+- - -
+Brought to you by: 
+RafDouglas C. Tommasi C.
+2019
+http://rafdouglas.science
+
+- - -
+Released as GNU General Public License v3.0 - 2019
+
