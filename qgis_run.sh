@@ -10,7 +10,7 @@ docker run -ti --rm \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	-v $my_homedir:/mnt/ext_home/ \
 	-v $my_qgis_dir:/root \
-	rafdouglas/qgis:3.4
+	rafdouglas/qgis_desktop:3.4
 
 
 

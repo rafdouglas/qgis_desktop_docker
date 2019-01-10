@@ -3,4 +3,4 @@ echo 'creating directory:'"$my_qgisdir"
 mkdir -p "$my_qgisdir"
 
 echo 'This will take a lot of time...'
-docker build -t rafdouglas/qgis:3.4 .
+docker build -t rafdouglas/qgis_desktop:3.4 .
