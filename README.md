@@ -29,6 +29,18 @@ If you instead feel like customizing something, you can build the image locally:
     
     sh qgis_run.sh 
 
+### Notes
+
+There are three exposed directories:
+1. `/mnt/ext_home/` is mapped to your home directory (i.e. "~") 
+2. `/root/qgis34-files` is the working files directory and is mapped to your computer's `~/qgis34-files`
+3. `/root/.local` (the profile/preferences directory) maps to your computer's `~/.qgis34-docker`. This allows to retain preferences, histroy, etc across different sessions.
+
+### Troubleshooting
+
+Since the X11-unix is mapped directly (by the qgis_run.sh script), there should be no need to run the insecure `xhost +` command.
+However, should you get errors accessing the display, consider running:
+    xhost +
 
 - - -
 Brought to you by: 
