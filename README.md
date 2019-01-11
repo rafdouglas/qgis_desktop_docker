@@ -40,13 +40,14 @@ There are three exposed directories:
 
 Since the X11-unix is mapped directly (by the qgis_run.sh script), there should be no need to run the insecure `xhost +` command.
 However, should you get errors accessing the display, consider running:
+
     xhost +
 
 - - -
 Brought to you by: 
-RafDouglas C. Tommasi C.
-2019
-http://rafdouglas.science
+
+:sparkles: RafDouglas C. Tommasi C. -  2019  
+:sparkles: http://rafdouglas.science  
 
 - - -
 Released as GNU General Public License v3.0 - 2019
