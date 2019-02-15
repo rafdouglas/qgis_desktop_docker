@@ -1,4 +1,4 @@
-#xhost +
+xhost +
 my_homedir=${HOME}
 my_files_dir="$my_homedir/qgis34-files"
 my_profile_dir="$my_homedir/.qgis34-docker"
