@@ -1,8 +1,8 @@
-# QGIS 3.4 Desktop running on Docker
+# QGIS 3.6 Desktop running on Docker
 
-A full-fledge QGIS 3.4 running on Docker.
+A full-fledge QGIS 3.6 running on Docker.
 
-Everything supported in the standard QGIS 3.4 is ready out of the box: 3D views, Google Maps/Sat/Terrain integration, OSM, plugins etc.
+Everything supported in the standard QGIS 3.6 is ready out of the box: 3D views, Google Maps/Sat/Terrain integration, OSM, plugins etc.
 Preferences are retained across sessions, and the integration with your physical computer is seamless.
 
 **Automated build on Docker Hub for maximum reliability.**
