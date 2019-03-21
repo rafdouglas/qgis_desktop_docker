@@ -35,7 +35,7 @@ RUN \
 
 #Install the actual QGIS package, than perform cleanup
 RUN \
-  add-apt-repository -s 'deb https://qgis.org/ubuntu/ bionic main' && \
+  add-apt-repository -s 'deb https://qgis.org/ubuntu-ltr/ bionic main' && \
   apt-get update && \
   apt-get install -y python-qgis qgis qgis-plugin-grass && \
   apt-get remove -y --purge qt4-qmake cmake-data qt4-linguist-tools libqt4-dev-bin && \

@@ -18,6 +18,9 @@ This is the easiest and fastest way, since it downloads the image from DockerHub
     cd qgis_desktop_docker
     sh qgis_run.sh
 
+    #after the container is running (i.e. with the full GUI), you can optionally use the Command Line:
+    sh qgis_cli.sh
+
 ### Build your own
 
 If you instead feel like customizing something, you can build the image locally:
