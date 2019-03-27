@@ -1,3 +1,7 @@
+[![Image info](https://images.microbadger.com/badges/image/rafdouglas/qgis_desktop.svg)](https://hub.docker.com/r/rafdouglas/qgis_desktop "Click to view the image on Docker Hub")
+[![Docker stars](https://img.shields.io/docker/stars/rafdouglas/qgis_desktop.svg)](https://hub.docker.com/r/rafdouglas/qgis_desktop "Click to view the image on Docker Hub")
+[![Docker pulls](https://img.shields.io/docker/pulls/rafdouglas/qgis_desktop.svg)](https://hub.docker.com/r/rafdouglas/qgis_desktop "Click to view the image on Docker Hub")
+
 # QGIS 3.4 Desktop running on Docker
 
 A full-fledge QGIS 3.4 running on Docker.
