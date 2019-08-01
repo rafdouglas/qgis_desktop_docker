@@ -37,7 +37,7 @@ RUN \
 RUN \
   add-apt-repository -s 'deb https://qgis.org/ubuntu/ bionic main' && \
   apt-get update && \
-  apt-get install python3-pyqt5.qtxmlpatterns && \
+  apt-get install -y python3-pyqt5.qtxmlpatterns && \
   apt-get install -y python-qgis qgis qgis-plugin-grass && \
   apt-get remove -y --purge qt4-qmake cmake-data qt4-linguist-tools libqt4-dev-bin && \
   apt-get remove -y --purge libqt4* libgtk* libsane gfortran-5 *gnome* libsane *pango* glib* *gphoto* && \ 
