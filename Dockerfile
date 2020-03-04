@@ -29,7 +29,7 @@ RUN \
   apt-get -y install ca-certificates apt-utils wget tzdata && \
   wget --no-check-certificate -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --batch --yes --import && \
   gpg --yes --batch --fingerprint CAEB3DC3BDF7FB45 && \
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-key CAEB3DC3BDF7FB45 && \
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3 && \
   /bin/ln -sf /usr/share/zoneinfo/Etc/Zulu  /etc/localtime && \
   dpkg-reconfigure -f noninteractive tzdata 
 
