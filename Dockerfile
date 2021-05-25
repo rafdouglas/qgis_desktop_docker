@@ -1,12 +1,12 @@
-#QGIS 3.16 on Ubuntu 18.04
+#QGIS 3.18 on Ubuntu 18.04
 # Pull base image.
 FROM ubuntu:20.04
 
 LABEL maintainer="RafDouglas C. Tommasi<https://github.com/rafdouglas>"
 
 LABEL org.label-schema.schema-version = "1.0"
-LABEL org.label-schema.version = "QGIS_3.16"
-LABEL org.label-schema.description = "QGIS 3.16.x docker"
+LABEL org.label-schema.version = "QGIS_3.18"
+LABEL org.label-schema.description = "QGIS 3.18.x docker"
 
 LABEL org.label-schema.url="http://rafdouglas.science"
 LABEL org.label-schema.vcs-url = "https://github.com/rafdouglas"
