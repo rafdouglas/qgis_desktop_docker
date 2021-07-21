@@ -5,8 +5,8 @@ FROM ubuntu:20.04
 LABEL maintainer="RafDouglas C. Tommasi<https://github.com/rafdouglas>"
 
 LABEL org.label-schema.schema-version = "1.0"
-LABEL org.label-schema.version = "QGIS_3.18"
-LABEL org.label-schema.description = "QGIS 3.18.x docker"
+LABEL org.label-schema.version = "QGIS_3.20"
+LABEL org.label-schema.description = "QGIS 3.20.x docker"
 
 LABEL org.label-schema.url="http://rafdouglas.science"
 LABEL org.label-schema.vcs-url = "https://github.com/rafdouglas"

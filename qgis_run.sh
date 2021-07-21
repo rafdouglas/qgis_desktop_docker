@@ -18,5 +18,5 @@ docker run -ti  --rm \
 	-v $my_homedir:/mnt/ext_home/ \
 	-v $my_files_dir:/root/qgis-docker-files \
 	-v $my_profile_dir:/root/ \
-	rafdouglas/qgis_desktop:3.18
+	rafdouglas/qgis_desktop:3.20
 
