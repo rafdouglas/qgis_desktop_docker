@@ -34,11 +34,25 @@ RUN \
   #/bin/ln -sf /usr/share/zoneinfo/Etc/Zulu  /etc/localtime && \
   #dpkg-reconfigure --frontend noninteractive tzdata && \
   apt-get -y install ca-certificates apt-utils wget && \
-  wget -qO - https://qgis.org/downloads/qgis-2020.gpg.key | gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import && \
+  wget -qO - https://qgis.org/downloads/qgis-2021.gpg.key | gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import && \
   chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg && \
-  wget --no-check-certificate -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --batch --yes --import && \
-  gpg --yes --batch --fingerprint CAEB3DC3BDF7FB45 && \
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3 
+  wget --no-check-certificate -O - https://qgis.org/downloads/qgis-2021.gpg.key | gpg --batch --yes --import && \
+  gpg --yes --batch --fingerprint 46B5721DBBD2996A && \
+  apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+
+#Install pdal and LASzip
+
+RUN \
+  apt-get -y install cmake++ python3 python3-pip git gdal-bin libgdal-dev python3-gdal && \
+  pip3 install ninja
+
+# LASzip
+RUN cd / && git clone --depth 1 https://github.com/LASzip/LASzip.git
+RUN cd /LASzip && mkdir build && cd build && cmake -G Ninja ../ && ninja && ninja install && cd /
+
+# pdal
+RUN cd / && git clone --depth 1 --branch 2.3.0 https://github.com/pdal/pdal.git
+RUN cd /pdal && mkdir build && cd build && cmake -G Ninja ../ -DBUILD_PLUGIN_PCL=ON -DBUILD_PLUGIN_P2G=ON -DBUILD_PLUGIN_PYTHON=ON -DPDAL_HAVE_GEOS=YES -WITH_LASZIP:BOOL=ON && ninja && ninja install && cd /
 
 #Install the actual QGIS package, than perform cleanup
 RUN \
